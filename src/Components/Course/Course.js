@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import fakeData from '../../fakeData/fakeData';
-import Child from '../Child/Child';
+import MainContainer from '../MainContainer/MainContainer';
 import Cart from '../Cart/Cart';
 import './Course.css';
 
@@ -13,12 +13,12 @@ const Course = () => {
 
   return (
   <div className='course d-flex'>
-    <div className='class1'>
+    <div className='main-component'>
     {
-      fakeData.map(fd=><Child addAmount={addAmount} users={fd} key={fd.id}></Child>)
+      fakeData.map(fd=><MainContainer addAmount={addAmount} users={fd} key={fd.id}></MainContainer>)
     }
     </div>
-    <div className='class2'>
+    <div className='unique-component'>
       <Cart users={users}></Cart>
     </div>
   </div>

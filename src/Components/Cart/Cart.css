@@ -6,6 +6,7 @@
   background: lightsteelblue;
   border-left: 3px solid rgb(68, 68, 212);
 }
+
 @media (max-width: 480px){
   .cart h3{
     font-size: 18px;

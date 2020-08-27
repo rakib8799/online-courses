@@ -1,15 +1,14 @@
 import React from 'react';
-import './Child.css';
+import './MainContainer.css';
 
-const Child = (props) => {
-  const {image,course,price} = props.users;
+const MainContainer = (props) => {
+  const {image,courseTitle,price} = props.users;
   return (
-    <div className='d-inline-block'>
+    <div className='d-inline-block ml-3'>
       <div className='content d-inline-block my-5 ml-2 text-center bg-dark text-white'>
         <img src={image} alt=""/>
         <div className='my-4'>
-
-        <h5>{course}</h5>
+        <h5>{courseTitle}</h5>
         <p>${price}</p>
         <button onClick={()=>props.addAmount(props.users)} className="btn btn-success">Enroll now</button>
         </div>
@@ -18,4 +17,4 @@ const Child = (props) => {
   );
 };
 
-export default Child;
+export default MainContainer;
