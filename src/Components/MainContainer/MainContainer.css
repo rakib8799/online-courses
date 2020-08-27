@@ -1,5 +1,6 @@
 .content{
   border-radius: 10px;
+  background: rgba(20, 23, 241, 0.602);
   transition: all .5s linear;
 }
 .content:hover{

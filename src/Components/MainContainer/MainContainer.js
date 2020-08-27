@@ -5,7 +5,7 @@ const MainContainer = (props) => {
   const {image,courseTitle,price} = props.users;
   return (
     <div className='d-inline-block ml-3'>
-      <div className='content d-inline-block my-5 ml-2 text-center bg-dark text-white'>
+      <div className='content d-inline-block my-5 ml-2 text-center  text-white'>
         <img src={image} alt=""/>
         <div className='my-4'>
         <h5>{courseTitle}</h5>
