@@ -1,0 +1,16 @@
+.cart{
+  width: 30%;
+  height: 50%;
+  margin-top: 10rem;
+  box-shadow: -5px 5px 20px 0 rgba(0,0,0,.5);
+  background: lightsteelblue;
+  border-left: 3px solid rgb(68, 68, 212);
+}
+@media (max-width: 480px){
+  .cart h3{
+    font-size: 18px;
+  }
+  .cart h5{
+    font-size: 16px;
+  }
+}
