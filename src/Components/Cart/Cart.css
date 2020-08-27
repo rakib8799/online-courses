@@ -1,17 +1,27 @@
 .cart{
   width: 30%;
-  height: 50%;
-  margin-top: 10rem;
+  height: 40%;
+  margin-top: 12rem;
   box-shadow: -5px 5px 20px 0 rgba(0,0,0,.5);
-  background: lightsteelblue;
+  background: rgb(211, 226, 245);
   border-left: 3px solid rgb(68, 68, 212);
+  line-height: .8;
 }
 
 @media (max-width: 480px){
+  .cart{
+    line-height: .05;
+    height: 30%;
+  }
   .cart h3{
     font-size: 18px;
   }
   .cart h5{
     font-size: 16px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px){
+  .cart{
+    height: 25%;
   }
 }
